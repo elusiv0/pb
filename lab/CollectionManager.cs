@@ -52,10 +52,10 @@ namespace lab
                 case "Номер телефона":
                     try
                     {
-                        phoneBook[key].PhoneNumb = Convert.ToInt32(finalValue);
+                        phoneBook[key].PhoneNumb = Convert.ToInt64(finalValue);
                         Console.WriteLine("Телефон был изменен на " + finalValue);
                     }
-                    catch (FormatException ex) { throw new ArgumentException("Поле телефон должно состоять из цифр.Повторите ввод."); }
+                    catch (FormatException ex) { throw new IncorrectArgumentException("Поле телефон должно состоять из цифр.Повторите ввод."); }
                     break;
                 case "Страна":
                     phoneBook[key].Country = finalValue;

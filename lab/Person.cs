@@ -9,14 +9,14 @@ namespace lab
         public string Surname { get; set; }
         public string Name { get; set; }
         public string Patronymic { get; set; }
-        public int PhoneNumb { get; set; }
+        public long PhoneNumb { get; set; }
         public string Country { get; set; }
         public DateTime Birthday { get; set; }
         public string Organization { get; set; }
         public string Position { get; set; }
         public string OtherNotes { get; set; }
 
-        public Person(string surname, string name, string patronymic, int phoneNumb, string country, DateTime birthday, string organization, string position, string otherNotes)
+        public Person(string surname, string name, string patronymic, long phoneNumb, string country, DateTime birthday, string organization, string position, string otherNotes)
         {
             this.Surname = surname;
             this.Name = name;

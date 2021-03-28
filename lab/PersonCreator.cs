@@ -8,7 +8,7 @@ namespace lab
     {
         public static Person GetPerson()
         {
-            int number;
+            long number;
             DateTime birthday;
             while (true)
             {
@@ -34,7 +34,7 @@ namespace lab
             Number:
                 try
                 {
-                    number = Convert.ToInt32(Console.ReadLine());
+                    number = Convert.ToInt64(Console.ReadLine());
                 }
                 catch (Exception ex)
                 {
